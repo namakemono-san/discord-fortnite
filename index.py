@@ -23,7 +23,7 @@ async def fortnite_api_request(url: str, params: dict = {}) -> dict:
 async def on_ready():
     print("bot is ready")
 
-@bot.comamnd()
+@bot.command()
 async def help(ctx):
     await ctx.send("map,item,stats,shop,br,creative,stw,cc")
 
@@ -36,17 +36,15 @@ async def map(ctx, lang=config['lang']):
     await ctx.send(embed=em)
 
 @bot.command()
-async def item(ctx, args=None, *, lang=config['lang']):
+async def item(ctx, *, args=None):
     if args == None:
         em = discord.Embed(title="Error",description="検索したいアイテム名を打ってください。",color=0xff0000)
         await ctx.send(embed=em)
     else:
-        if args != None:
-            response = await fortnite_api_request(f'cosmetics/br/search/all?name={args}&matchMethod=starts&language=ja&searchLanguage={lang}')
+        response = requests.get(f'https://fortnite-api.com/v2/cosmetics/br/search/all?name={args}&matchMethod=starts&language=ja&searchLanguage={config["lang"]}').json()
 
         if response['status'] == 200:
 
-            results = []
             for item in response['data']:
                 try:
                     item_set = item["set"]["value"]
@@ -67,7 +65,7 @@ async def item(ctx, args=None, *, lang=config['lang']):
                 embed.add_field(name="セット",value=f'{item_set}')
                 embed.add_field(name="導入日",value=f'{item_introduction}')
                 embed.set_footer(text=f"コマンド実行者: {ctx.author}", icon_url=ctx.author.avatar_url)
-                results.append(embed)
+                await ctx.send(embed=embed)
 
         elif response['status'] == 400:
             error = response['error']
@@ -255,8 +253,7 @@ async def stw(ctx, lang=config['lang']):
         embed.set_footer(text=f"コマンド実行者: {ctx.author}", icon_url=ctx.author.avatar_url)
         await ctx.send(embed=embed)
 
-@commands.command(aliases=['cc'], usage='creatorcode <code>')
-@commands.cooldown(4, 30, commands.BucketType.user)
+@bot.command()
 async def creatorcode(self, ctx, *, code=None):
 
     if code == None:
