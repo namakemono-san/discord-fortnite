@@ -29,7 +29,7 @@ async def help(ctx):
 
 @bot.command()
 async def map(ctx, lang=config['lang']):
-    data = requests.get(f'https://fortnite-api.com/v1/map?language={lang}')
+    data = requests.get(f'https://fortnite-api.com/v1/map?language={lang}').json()
     em = discord.Embed(title="フォートナイトのマップ", colour=0x6a5acd)
     em.set_image(url=data['data']['images']['pois'])
     em.set_footer(text=f"コマンド実行者: {ctx.author}", icon_url=ctx.author.avatar_url)
