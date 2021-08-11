@@ -301,7 +301,5 @@ async def creatorcode(self, ctx, *, code=None):
         embed.set_footer(text=f"コマンド実行者: {ctx.author}", icon_url=ctx.author.avatar_url)
         await ctx.send(embed=embed)
 
-        await ctx.send(embed=embed)
-
 if __name__ == '__main__':
     bot.run(config['Token'])
