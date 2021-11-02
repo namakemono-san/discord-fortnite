@@ -9,8 +9,8 @@
 
 ## Pythonの導入
 
-**Pythonの導入がお済みな方は飛ばして構いません。**
-
+**Pythonの導入がお済みな方は飛ばして構いません。**  
+  
 [Python](https://python.org/)から**Downloads**にいき、 **Looking for a specific release?** から  
 **Python 3.9.6**を[選択](https://www.python.org/downloads/release/python-396/)します。  
 
@@ -19,7 +19,7 @@
 まず最初にPythonをダウンロードします
 32bitの場合は [**Windows installer (32-bit)**](https://www.python.org/ftp/python/3.9.6/python-3.9.6.exe)  
 64bitの場合は [**Windows installer (64-bit)**](https://www.python.org/ftp/python/3.9.6/python-3.9.6-amd64.exe)  
-ダウンロードが完了しましたら起動してください。
+ダウンロードが完了しましたら起動してください。  
 起動したら**Add Python 3.9 to PATH**に必ずチェックを入れて**Install Now**をクリックしてください。  
 インストールが完了しましたら閉じてください。  
 次にコマンドプロンプトを起動して、そこに`python --version`を入力し、**Python 3.9.6**が表示されましたらインストールが完了です。
@@ -42,15 +42,15 @@
 
 まず[この](https://github.com/namakemono-san/discord-fortnite)ページに飛び、**Code**から**Download ZIP**をクリックします。  
 ダウンロードができましたら、ファイルを解凍します。  
-解凍できましたらまず最初に**install.bat**を起動してください。（ライブラリーのインストール）
-**続行するには何かキーを押してください . . .** という表示が出たらインストール完了です。
-インストールができましたら次に**config.json**を開きます。**Token**というところに自分のDiscordBotのトークンを入力してください。
-※ Discord Botの作成から取得方法を解説しています。
-**lang**はAPIの言語設定でございます。（初期設定: ja）
-**prefix**はbotのプレフィックスでございます。（初期設定: fn!）
-設定が完了しましたら **run.bat** を起動してください。
-起動して **Discord Botが起動しました。** と表示されましたらBotの準備が完了です。お疲れさまでした。
-※ここでエラーが発生した場合はTwitter(namakemono_san5)にDMでご連絡ください。（確認は遅れます）
+解凍できましたらまず最初に**install.bat**を起動してください。（ライブラリーのインストール）  
+**続行するには何かキーを押してください . . .** という表示が出たらインストール完了です。  
+インストールができましたら次に**config.json**を開きます。**Token**というところに自分のDiscordBotのトークンを入力してください。  
+※ Discord Botの作成から取得方法を解説しています。  
+**lang**はAPIの言語設定でございます。（初期設定: ja）  
+**prefix**はbotのプレフィックスでございます。（初期設定: fn!）  
+設定が完了しましたら **run.bat** を起動してください。  
+起動して **Discord Botが起動しました。** と表示されましたらBotの準備が完了です。お疲れさまでした。  
+※ここでエラーが発生した場合はTwitter(namakemono_san5)にDMでご連絡ください。（確認は遅れます）  
 
 # Discord Botの作成
 
@@ -64,7 +64,7 @@ Botページが開けましたら、**TOKEN**という欄から**Copy**をクリ
 
 # ライセンス
 
-[MITライセンス](LICENCE)
+[MITライセンス](LICENCE)  
 
 このソフトウェアを無制限で使用することができます  
 商用、非商用、改変、再配布なども許可されます  
