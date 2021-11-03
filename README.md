@@ -16,7 +16,7 @@
 
 ### Windows OSの場合
 
-まず最初にPythonをダウンロードします
+まず最初にPythonをダウンロードします  
 32bitの場合は [**Windows installer (32-bit)**](https://www.python.org/ftp/python/3.9.6/python-3.9.6.exe)  
 64bitの場合は [**Windows installer (64-bit)**](https://www.python.org/ftp/python/3.9.6/python-3.9.6-amd64.exe)  
 ダウンロードが完了しましたら起動してください。  
