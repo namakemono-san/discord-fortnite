@@ -45,7 +45,7 @@
 解凍できましたらまず最初に**install.bat**を起動してください。（ライブラリーのインストール）  
 **続行するには何かキーを押してください . . .** という表示が出たらインストール完了です。  
 インストールができましたら次に**config.json**を開きます。**Token**というところに自分のDiscordBotのトークンを入力してください。  
-※ Discord Botの作成から取得方法を解説しています。  
+※ [Discord Botの作成](https://github.com/namakemono-san/discord-fortnite/blob/main/README.md#discord-bot%E3%81%AE%E4%BD%9C%E6%88%90)から取得方法を解説しています。  
 **lang**はAPIの言語設定でございます。（初期設定: ja）  
 **prefix**はbotのプレフィックスでございます。（初期設定: fn!）  
 設定が完了しましたら **run.bat** を起動してください。  
